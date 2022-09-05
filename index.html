@@ -157,19 +157,24 @@
         <script src="__intro.js"></script>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="//www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
-        <script>
+        <script type="module">
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
             // Your web app's Firebase configuration
-            const config = {
-                apiKey: "AIzaSyCmMws68NGfI0CPy1Op7dyXwJEXzMiQMlw",
-                authDomain: "tk-arcade.firebaseapp.com",
-                databaseURL: "//tk-arcade.firebaseio.com",
-                projectId: "tk-arcade",
-                storageBucket: "tk-arcade.appspot.com",
-                messagingSenderId: "157715413374",
-                appId: "1:157715413374:web:b486e3c89b8f9b88",
+            const firebaseConfig = {
+                apiKey: "AIzaSyBdV6W3tDabGwhKxjlIjq7FMD-QOEGy7Qw",
+                authDomain: "trophy-king-docs.firebaseapp.com",
+                databaseURL: "//trophy-king-docs.firebaseapp.com",
+                projectId: "trophy-king-docs",
+                storageBucket: "trophy-king-docs.appspot.com",
+                messagingSenderId: "148174123986",
+                appId: "1:148174123986:web:f33a190a3d6a918c4b4e0b",
+                measurementId: "G-EKV9645B5R"
             };
 
-            window.middleware = firebase.initializeApp(config);
+            // Initialize Firebase
+            window.middleware = firebase.initializeApp(firebaseConfig);
             window.db = firebase.firestore();
         </script>
     </body>
