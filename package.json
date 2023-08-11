@@ -4,7 +4,7 @@
     "description": "",
     "main": "__game-scripts.js",
     "scripts": {
-        "deploy": "firebase deploy -P tk-arcade --only hosting:chiharu",
+        "deploy": "firebase deploy -P chiharu-live --only hosting:chiharu-live",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "lint": "eslint 'src/**/*.{js, jsx, ts, tsx}'",

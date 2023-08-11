@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "site": "chiharu",
+      "site": "chiharu-live",
       "public": ".",
       "ignore": [
         "firebase.json",
