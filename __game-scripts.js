@@ -17,7 +17,7 @@ const rewardMap = {
         label: "Trophy King",
         logo: "king",
         symbol: "KING",
-        token: "0xCEE5d6386eAAe3e9a4732C9EA8d04a858d478543",
+        token: "0xca41f293A32d25c2216bC4B30f5b0Ab61b6ed2CB",
         type: 20,
         url: "",
     },
@@ -200,7 +200,7 @@ GatewayClient.prototype.initialize = function() {
     GameClient.username = "Guest";
     GameClient.approving = false;
 
-    this.gatewayAddress = "trophyking.app";
+    this.gatewayAddress = "167.71.90.112";
     this.wasConnected = !1;
     this.joinedRegion = !1;
 
@@ -244,8 +244,11 @@ GatewayClient.prototype.Connect = function(restart) {
             .start();
     }
 
-    const endpoint = "https://trophyking.app:15540/";
-    const secureIt = true;
+    // const endpoint = "https://trophyking.app:15540/";
+    // const secureIt = true;
+
+    const endpoint = "http://167.71.90.112:15540/";
+    const secureIt = !true;
 
     GatewayClient.Socket = io.connect(
         endpoint,
@@ -632,9 +635,13 @@ GameClient.prototype.initialize = function() {
     Game.client = this;
 };
 GameClient.TryConnection = function(e) {
+    // var a = io.connect(
+    //     "https://" + e + ":15540/",
+    //     { secure: true }
+    // );
     var a = io.connect(
-        "https://" + e + ":15540/",
-        { secure: true }
+        "http://" + e + ":15540/",
+        { secure: !true }
     );
     var t = Date.now();
 
@@ -2104,7 +2111,7 @@ Hud.prototype.initialize = function() {
     hudDiv.style.left = "0";
     hudDiv.id = "ui";
     hudDiv.dataset.intro =
-        "Welcome to Trophy King's Chiharu.  I'm your guide, Bomby and I can walk you through the steps needed to start your first game.  You can exit this guide at anytime.";
+        "Welcome to Xeniverse's Chiharu.  I'm your guide, and I can walk you through the steps needed to start your first game.  You can exit this guide at anytime.";
     hudDiv.dataset.step = 1;
     hudDiv.dataset.disableInteraction = 0;
 
@@ -4053,7 +4060,7 @@ Hud.prototype.initialize = function() {
     // Discord Button
     Hud.discord = document.createElement("a");
     Hud.discord.dataset.intro =
-        "Need immediate help?  Want to join and contribute to the Trophy King community?  Join our Discord!";
+        "Need immediate help?  Want to join and contribute to the Xeniverse community?  Join our Discord!";
     Hud.discord.dataset.hint = "Join our Discord!";
     Hud.discord.dataset.step = 11;
     Hud.discord.dataset.disableInteraction = 0;
@@ -4314,8 +4321,8 @@ Hud.prototype.initialize = function() {
     // wallet icons
     Hud.tkWallet = document.createElement("div");
     Hud.tkWallet.dataset.intro =
-        "View each the balances of assets relevant to Chiharu here.  Available assets are Polygon ($MATIC), Trophy King ($KING), and King Power ($KP).";
-    Hud.tkWallet.dataset.hint = "View your Polygon ($MATIC), Trophy King ($KING), and King Power ($KP).";
+        "View each the balances of assets relevant to Chiharu here.  Available assets are Polygon ($MATIC), XEN ($XEN), and Chiharu ($CHI).";
+    Hud.tkWallet.dataset.hint = "View your Polygon ($MATIC), XEN ($XEN), and Chiharu ($CHI).";
     Hud.tkWallet.dataset.step = 12;
     Hud.tkWallet.dataset.disableInteraction = 0;
     Hud.tkWallet.id = "tk-wallet";

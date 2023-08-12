@@ -33,9 +33,9 @@ window.onload = () => {
 
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
-            console.log("Trophy King identity authenticated.", user);
+            console.log("Xeniverse identity authenticated.", user);
         } else {
-            console.log("Unable to authenticate Trophy King identity.");
+            console.log("Unable to authenticate Xeniverse identity.");
         }
     });
 };

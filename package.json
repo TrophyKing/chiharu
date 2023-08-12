@@ -4,7 +4,7 @@
     "description": "",
     "main": "__game-scripts.js",
     "scripts": {
-        "deploy": "firebase deploy -P chiharu-live --only hosting:chiharu-live",
+        "deploy": "firebase deploy -P xeniverse-alpha --only hosting:xeniverse-chiharu",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "lint": "eslint 'src/**/*.{js, jsx, ts, tsx}'",
@@ -19,9 +19,9 @@
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/TrophyKing/chiharu/issues"
+        "url": "https://github.com/xeniverse/chiharu/issues"
     },
-    "homepage": "https://github.com/TrophyKing/chiharu#readme",
+    "homepage": "https://github.com/xeniverse/chiharu#readme",
     "prettier": {
         "arrowParens": "always",
         "bracketSpacing": true,
